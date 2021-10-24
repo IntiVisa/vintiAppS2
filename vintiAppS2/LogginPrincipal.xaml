@@ -11,6 +11,8 @@
             <Entry x:Name="txtusuario" Placeholder="Ingrese su Usuario"/>
             <Entry x:Name="txtcontraseña" Placeholder="Ingrese su Contraseña" IsPassword="True"/>
             <Button x:Name="btnAbrir" Text="Abrir Ventana 2" Clicked="btnAbrir_Clicked"/>
+            <Label Text="" x:Name="lblMensaje" TextColor="Red"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -21,7 +21,17 @@ namespace vintiAppS2
         {
             string usuario = txtusuario.Text;
             string contraseña = txtcontraseña.Text;
-            await Navigation.PushAsync(new MainPage(usuario, contraseña));
+            if ((usuario == "estudiante2021") && (contraseña == "uisrael2021"))
+            {
+                await Navigation.PushAsync(new MainPage(usuario, contraseña));
+
+            }
+            else
+            {
+                lblMensaje.Text = "El usuario o password son incorrectos";
+            }
+            
+            
         }
     }
 }
