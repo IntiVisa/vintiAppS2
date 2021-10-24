@@ -4,10 +4,21 @@
              x:Class="vintiAppS2.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+        <Frame BackgroundColor="#2196F3" Padding="0" CornerRadius="0">
             <Label Text="Sitema de Calificaciones UI" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
         </Frame>
 
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblUsuario" Grid.Row="0" Grid.Column="0"/>
+            <Label x:Name="lblContraseña" Grid.Row="0" Grid.Column="1"/>
+        </Grid>
+        
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition/>

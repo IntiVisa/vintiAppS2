@@ -4,15 +4,21 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace vintiAppS2
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : ContentPage
     {
-        public MainPage()
+        public MainPage(string usuario, string contraseña)
         {
             InitializeComponent();
+            //
+            lblUsuario.Text ="Usuario: "+usuario;
+            lblContraseña.Text = contraseña;
         }
 
         private void btnVerificar_Clicked(object sender, EventArgs e)

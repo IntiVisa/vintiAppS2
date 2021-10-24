@@ -10,7 +10,7 @@ namespace vintiAppS2
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new LogginPrincipal());
         }
 
         protected override void OnStart()
